@@ -479,3 +479,22 @@ passed = [name for name,score in scores.items() if score > 65]# write your list 
 print(passed)
 
                              # ..........................#
+
+
+#  ................................  Number 29  ..................................#
+
+def say_hello():
+    print("Hello")
+
+say_hello()
+
+                             # ..........................#
+
+#  ................................  Number 30  ..................................#
+def cylinder_volume(height, radius):
+    pi = 3.14159
+    return height * pi * radius ** 2
+
+print(cylinder_volume(6,12))
+
+                             # ..........................#
