@@ -1,3 +1,16 @@
-sq_iterator = (x**2 for x in range(10))
+how_many_snakes = 1
+snake_string = """
+Simple To Complex List!
 
-print(sq_iterator)
+             ____
+            / . .\\
+            \  ---<
+             \  /
+   __________/ /
+-=:___________/
+
+Welcome, SimpleToComplexList_by_SushenBiswas
+"""
+
+
+print(snake_string * how_many_snakes)

@@ -657,11 +657,26 @@ print(sq_list)
 #  ................................  Number 43  ..................................#
 sq_iterator = (x**2 for x in range(10))
 
-print(sq_iterator)
+#print(sq_iterator)
 
                              # ............................#
 
 #  ................................  Number 44  ..................................#
+how_many_snakes = 1
+snake_string = """
+Simple To Complex List!
 
+             ____
+            / . .\\
+            \  ---<
+             \  /
+   __________/ /
+-=:___________/
+
+Welcome, SimpleToComplexList_by_SushenBiswas
+"""
+
+
+print(snake_string * how_many_snakes)
 
                              # ............................#
