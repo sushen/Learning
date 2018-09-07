@@ -700,7 +700,159 @@ for name, assignment, grade in zip(names, assignments, grades):
 
                              # ............................#
 
-# ................................  Number 46  ..................................#
+# ................................  Number 47  ..................................#
+
+try:
+    yourAge = int(input("How old are you: "))
+    print("I am {} years old".format(yourAge))
+except:
+    print("You need to write number")
+
+                             # ............................#
+
+# ................................  Number 48  ..................................#
+
+while True:
+    try:
+        yourAge = int(input("How old are you: "))
+        print("I am {} years old".format(yourAge))
+        break
+    except:
+        print("You need to write number")
+                             # ............................#
+
+# ................................  Number 49  ..................................#
+while True:
+    try:
+        yourAge = int(input("How old are you: "))
+        print("I am {} years old".format(yourAge))
+        break
+    except:
+        print("You need to write number")
+
+    finally:
+        print("\nInput occurs\n")
+
+                             # ............................#
+
+# ................................  Number 50  ..................................#
+
+while True:
+    try:
+        yourAge = int(input("How old are you: "))
+        print("I am {} years old".format(yourAge))
+        break
+    except ValueError:
+        print("You need to write number")
+
+    finally:
+        print("\nInput occurs\n")
+                             # ............................#
+
+# ................................  Number 51  ..................................#
+while True:
+    try:
+        yourAge = int(input("How old are you: "))
+        print("I am {} years old".format(yourAge))
+        break
+    except ValueError,KeyboardInterrupt:
+        print("You need to write number")
+
+    finally:
+        print("\nInput occurs\n")
+
+                             # ............................#
+
+# ................................  Number 52  ..................................#
+while True:
+    try:
+        yourAge = int(input("How old are you: "))
+        print("I am {} years old".format(yourAge))
+        break
+    except ValueError:
+        print("You need to write number")
+    except KeyboardInterrupt:
+        print("\n No Input Taken")
+        break
+
+    finally:
+        print("\nInput occurs\n")
+
+                             # ............................#
+
+# ................................  Number 53  ..................................#
+def party_planner(cookies, people):
+    leftovers = None
+    num_each = None
+    # TODO: Add a try-except block here to
+    #       make sure no ZeroDivisionError occurs.
+    try:
+        num_each = cookies // people
+        leftovers = cookies % people
+
+    except ZeroDivisionError:
+        print("Oops, you entered 0 people will be attending.")
+        print("Please enter a good number of people for a party.")
+
+        return(num_each, leftovers)
+
+
+# The main code block is below; do not edit this
+lets_party = 'y'
+while lets_party == 'y':
+
+    cookies = int(input("How many cookies are you baking? "))
+    people = int(input("How many people are attending? "))
+
+    cookies_each, leftovers = party_planner(cookies, people)
+
+    if cookies_each:  # if cookies_each is not None
+        message = "\nLet's party! We'll have {} people attending, they'll each get to eat {} cookies, and we'll have {} left over."
+        print(message.format(people, cookies_each, leftovers))
+
+    lets_party = input("\nWould you like to party more? (y or n) ")
+
+
+
+                             # ............................#
+
+# ................................  Number 54  ..................................#
+def party_planner(cookies, people):
+    leftovers = None
+    num_each = None
+    # TODO: Add a try-except block here to
+    #       make sure no ZeroDivisionError occurs.
+    try:
+        num_each = cookies // people
+        leftovers = cookies % people
+
+    except ZeroDivisionError as e:
+        print("Oops, you entered 0 people will be attending.")
+        print("Please enter a good number of people for a party. {}")
+
+        print("Exception occurred: {}".format(e))
+
+        return (num_each, leftovers)
+
+
+# The main code block is below; do not edit this
+lets_party = 'y'
+while lets_party == 'y':
+
+    cookies = int(input("How many cookies are you baking? "))
+    people = int(input("How many people are attending? "))
+
+    cookies_each, leftovers = party_planner(cookies, people)
+
+    if cookies_each:  # if cookies_each is not None
+        message = "\nLet's party! We'll have {} people attending, they'll each get to eat {} cookies, and we'll have {} left over."
+        print(message.format(people, cookies_each, leftovers))
+
+    lets_party = input("\nWould you like to party more? (y or n) ")
+
+                             # ............................#
+
+# ................................  Number 55  ..................................#
 
 
                              # ............................#
