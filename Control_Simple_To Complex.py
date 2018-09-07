@@ -755,7 +755,7 @@ while True:
         yourAge = int(input("How old are you: "))
         print("I am {} years old".format(yourAge))
         break
-    except ValueError,KeyboardInterrupt:
+    except ValueError:
         print("You need to write number")
 
     finally:
@@ -851,6 +851,36 @@ while lets_party == 'y':
     lets_party = input("\nWould you like to party more? (y or n) ")
 
                              # ............................#
+
+# ................................  Number 55  ..................................#
+file = []
+for i in range(1000000):
+    file.append(open('test.txt','r'))
+    print(i)
+
+                             # ............................#
+
+# ................................  Number 55  ..................................#
+
+f = open('test.txt','r')
+                             # ............................#
+
+
+# ................................  Number 55  ..................................#
+
+f = open('test.txt','r')
+file_data = f.read()
+f.close()
+
+print(file_data)
+                             # ............................#
+
+
+# ................................  Number 55  ..................................#
+f = open('test.txt','W')
+
+                             # ............................#
+
 
 # ................................  Number 55  ..................................#
 
