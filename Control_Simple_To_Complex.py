@@ -897,26 +897,47 @@ print(file_data)
 
                              # ............................#
 
-# ................................  Number 61  ..................................#
 
+#  ................................  Number 61  ..................................#
+with open("camelot.txt") as song:
+    file_data = song.read()
+
+print(file_data)
+
+                             # ............................#
+
+# ................................  Number 62  ..................................#
+
+camelot_lines = []
+with open("camelot.txt") as f:
+    for line in f:
+        camelot_lines.append(line.strip())
+
+print(camelot_lines)
 
 
                              # ............................#
 
-#  ................................  Number 61  ..................................#
-#
-#
-#
-#                              # ............................#
+#  ................................  Number 63  ..................................#
+def create_cast_list(filename):
+    cast_list = []
+    #use with to open the file filename
+    with open("flying_circus_cast.txt") as f:
+    #use the for loop syntax to process each line
+        for line in f:
+    #and add the actor name to cast_list
+            cast_list.append(line.split(",")[0])
+
+        return cast_list
+
+cast_list = create_cast_list('flying_circus_cast.txt')
+for actor in cast_list:
+    print(actor)
+
+
+                            # ............................#
 
 #  ................................  Number 61  ..................................#
-#
-#
-#
-#                              # ............................#
 
-#  ................................  Number 61  ..................................#
-#
-#
-#
-#                              # ............................#
+
+                            # ............................#
