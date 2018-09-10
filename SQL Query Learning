@@ -1,0 +1,18 @@
+
+#................................  Number 1  ..................................#
+
+QUERY = '''
+select name, birthdate from animals where species = 'gorilla';
+'''
+
+                        #..........................#
+
+
+#................................  Number 2  ..................................#
+
+QUERY = '''
+select name, birthdate from animals where species = 'gorilla';
+'''
+
+                        #..........................#
+
