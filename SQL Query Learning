@@ -27,7 +27,7 @@ select name from animals where not( species = 'gorilla' or name = 'Max');
 #................................  Number 4  ..................................#
 
 QUERY = '''
-select name from animals where species = 'llama' and birthdate >= '1995-1-1' and birthdate <= '1998-12-31';
+select name from animals where species = 'llama' and birthdate >= '1995-1-1' and  birthdate <= '1998-12-31';
 '''
 
                         #..........................#
