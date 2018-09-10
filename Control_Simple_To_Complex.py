@@ -755,7 +755,7 @@ while True:
         yourAge = int(input("How old are you: "))
         print("I am {} years old".format(yourAge))
         break
-    except ValueError,KeyboardInterrupt:
+    except ValueError:
         print("You need to write number")
 
     finally:
@@ -853,6 +853,91 @@ while lets_party == 'y':
                              # ............................#
 
 # ................................  Number 55  ..................................#
+file = []
+for i in range(1000000):
+    file.append(open('test.txt','r'))
+    print(i)
+
+                             # ............................#
+
+# ................................  Number 56  ..................................#
+
+f = open('test.txt','r')
+                             # ............................#
+
+
+# ................................  Number 57  ..................................#
+
+f = open('test.txt','r')
+file_data = f.read()
+f.close()
+
+print(file_data)
+                             # ............................#
+
+
+# ................................  Number 58  ..................................#
+f = open('test.txt','w')
+
+                             # ............................#
+
+
+# ................................  Number 59  ..................................#
+
+f = open('testWrite.txt','w')
+f.write("Mango")
+f.close()
+                             # ............................#
+
+# ................................  Number 60  ..................................#
+with open('test.txt', 'r') as f:
+    file_data = f.read()
+
+print(file_data)
+
+                             # ............................#
+
+
+#  ................................  Number 61  ..................................#
+with open("camelot.txt") as song:
+    file_data = song.read()
+
+print(file_data)
+
+                             # ............................#
+
+# ................................  Number 62  ..................................#
+
+camelot_lines = []
+with open("camelot.txt") as f:
+    for line in f:
+        camelot_lines.append(line.strip())
+
+print(camelot_lines)
 
 
                              # ............................#
+
+#  ................................  Number 63  ..................................#
+def create_cast_list(filename):
+    cast_list = []
+    #use with to open the file filename
+    with open("flying_circus_cast.txt") as f:
+    #use the for loop syntax to process each line
+        for line in f:
+    #and add the actor name to cast_list
+            cast_list.append(line.split(",")[0])
+
+        return cast_list
+
+cast_list = create_cast_list('flying_circus_cast.txt')
+for actor in cast_list:
+    print(actor)
+
+
+                            # ............................#
+
+#  ................................  Number 61  ..................................#
+
+
+                            # ............................#
